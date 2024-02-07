@@ -10,7 +10,7 @@ def laskut(n):
     
     except ValueError:
         print("Anna luku")
-        
+
     else:
         for _ in range(n):
             a = random.randint(1,10)
@@ -19,4 +19,9 @@ def laskut(n):
 
 
 if __name__ == "__main__":
-    laskut(sys.argv[1])
+    
+    if(len(sys.argv) == 1):
+        laskut(10)
+    else:
+        laskut(sys.argv[1])
+            
